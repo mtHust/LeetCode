@@ -9,7 +9,8 @@ SUBDIRS += \
     two-sum \
     remove-nth-node-from-end-of-list \
     count-and-say \
-    subsets
+    subsets \
+    evaluate-reverse-polish-notation
 
 
 #SOURCES += main.cpp
