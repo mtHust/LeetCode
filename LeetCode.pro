@@ -10,7 +10,8 @@ SUBDIRS += \
     remove-nth-node-from-end-of-list \
     count-and-say \
     subsets \
-    evaluate-reverse-polish-notation
+    evaluate-reverse-polish-notation \
+    binary-tree-level-order-traversal
 
 
 #SOURCES += main.cpp
