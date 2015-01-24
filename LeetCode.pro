@@ -24,7 +24,8 @@ SUBDIRS += \
     largest-number \
     majority-element \
     length-of-last-word \
-    implement-strstr
+    implement-strstr \
+    intersection-of-two-linked-lists
 
 
 #SOURCES += main.cpp
