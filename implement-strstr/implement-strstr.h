@@ -25,20 +25,31 @@ public:
         if(!haystack || !needle)
             return -1;
 
-        int i1 = 0; // main loop
-        int i2 = 0; // sub scanner
-        while( haystack[i1] && needle[i2] ){
-            if(haystack[i1] == needle[i2]){
-                ++i1;
-                ++i2;
+        int imain = 0; // main loop
+        int iscan = 0; // sub scanner
+        while( haystack[imain] && needle[iscan] ){
+            if(haystack[imain] == needle[iscan]){
+                ++imain;
+                ++iscan;
             }else{
-                i1 = i1 - i2 + 1;
-                i2 = 0;
+                imain = imain - iscan + 1;   // back to the next main loop
+                iscan = 0;
             }
         }
 
-        return needle[i2] ?  -1 : (i1-i2);
+        // when needle[iscan]=='\0' then found else not found
+        return needle[iscan] ?  -1 : (imain-iscan);
     }
 };
+
+#include <iostream>
+void test_implement_strstr(){
+    using std::cout;
+    using std::endl;
+
+    Solution solv;
+
+    cout<<solv.strStr("hello world !", "world")<<endl;
+}
 
 #endif // IMPLEMENTSTRSTR_H
