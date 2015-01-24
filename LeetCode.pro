@@ -22,7 +22,8 @@ SUBDIRS += \
     valid-number \
     permutation-sequence \
     largest-number \
-    majority-element
+    majority-element \
+    length-of-last-word
 
 
 #SOURCES += main.cpp
