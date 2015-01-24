@@ -14,6 +14,20 @@ return 5.
 
 Hide Tags String
 
+Method:
+    // state change table
+    // type: 0--space; 1--else;
+    int stateTable[][2]={
+        0, 1,
+        2, 1,
+        2, 3,
+        2, 1,
+    };
+
+Copyright:
+    by maotinghust@gmail.com
+    at 2015/01/24
+
 */
 
 class Solution {
