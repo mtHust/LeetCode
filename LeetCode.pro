@@ -25,7 +25,8 @@ SUBDIRS += \
     majority-element \
     length-of-last-word \
     implement-strstr \
-    intersection-of-two-linked-lists
+    intersection-of-two-linked-lists \
+    permutations
 
 
 #SOURCES += main.cpp
