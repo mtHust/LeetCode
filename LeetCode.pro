@@ -23,7 +23,8 @@ SUBDIRS += \
     permutation-sequence \
     largest-number \
     majority-element \
-    length-of-last-word
+    length-of-last-word \
+    implement-strstr
 
 
 #SOURCES += main.cpp
