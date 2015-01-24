@@ -11,7 +11,18 @@ SUBDIRS += \
     count-and-say \
     subsets \
     evaluate-reverse-polish-notation \
-    binary-tree-level-order-traversal
+    binary-tree-level-order-traversal \
+    excel-sheet-column-title \
+    excel-sheet-column-number \
+    reorder-list \
+    pascals-triangle-ii \
+    pascals-triangle \
+    validate-binary-search-tree \
+    word-search \
+    valid-number \
+    permutation-sequence \
+    largest-number \
+    majority-element
 
 
 #SOURCES += main.cpp
