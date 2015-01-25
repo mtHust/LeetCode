@@ -26,7 +26,8 @@ SUBDIRS += \
     length-of-last-word \
     implement-strstr \
     intersection-of-two-linked-lists \
-    permutations
+    permutations \
+    minimum-depth-of-binary-tree
 
 
 #SOURCES += main.cpp
