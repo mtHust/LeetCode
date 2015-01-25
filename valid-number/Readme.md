@@ -5,11 +5,11 @@
 > Validate if a given string is numeric.
 > 
 > Some examples:
-> "0" => true
-> " 0.1 " => true
-> "abc" => false
-> "1 a" => false
-> "2e10" => true
+> - "0" => true
+> - " 0.1 " => true
+> - "abc" => false
+> - "1 a" => false
+> - "2e10" => true
 > Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
 
@@ -33,7 +33,8 @@ State|INVALID|SPACE|CHAR_SIGN|DIGITAL|CHAR_DOT|CHAR_E|Note
 
 ## State Change Graph
 
-![valid-number state change](https://github.com/mtHust/LeetCode/valid-number/valid-number.png)
+![valid-number state change](https://github.com/mtHust/LeetCode/blob/master/valid-number/valid-number.png)
+
 
 
 ### graphviz code
