@@ -5,11 +5,19 @@
 > Validate if a given string is numeric.
 > 
 > Some examples:
+<<<<<<< HEAD
 > - "0" => true
 > - " 0.1 " => true
 > - "abc" => false
 > - "1 a" => false
 > - "2e10" => true
+=======
+> + "0" => true
+> + " 0.1 " => true
+> + "abc" => false
+> + "1 a" => false
+> + "2e10" => true
+>>>>>>> 4f4982e078f723708a7d73619aa777ef4f69fc44
 > 
 > Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
@@ -97,5 +105,10 @@
 
 
 #Copyright
+<<<<<<< HEAD
 by maotinghust@gmail.com at 2015/01/24
 
+=======
+by maotinghust@gmail.com
+at 2015/01/24
+>>>>>>> 4f4982e078f723708a7d73619aa777ef4f69fc44
