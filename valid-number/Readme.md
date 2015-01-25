@@ -52,17 +52,17 @@ Content Cell  | Content Cell
 | zebra stripes | are neat        |    $1 |
 
 
- | State | INVALID | SPACE | CHAR-SIGN | DIGITAL | CHAR-DOT | CHAR-E | Note  |
- | :---: | :-----: | ----- | :-------: | :-----: | :------: | :----: | :---- |
- | 0 | -1 | 0 | 3 | 1 | 2 | -1 | SPACE |
- | 1 | -1 | 8 | -1 | 1 | 4 | 5 | SPACE DIGITAL |
- | 2 | -1 | -1 | -1 | 4 | -1 | -1 | SPACE CHAR-DOT |
- | 3 | -1 | -1 | -1 | 1 | 2 | -1 | SPACE CHAR-SIGN |
- | 4 | -1 | 8 | -1 | 4 | -1 | 5 | SPACE DIGITAL CHAR-DOT |
- | 5 | -1 | -1 | 6 | 7 | -1 | -1 | SPACE DIGITAL CHAR-DOT CHAR-E |
- | 6 | -1 | -1 | -1 | 7 | -1 | -1 | SPACE DIGITAL CHAR-DOT CHAR-E CHAR-SIGN |
- | 7 | -1 | 8 | -1 | 7 | -1 | -1 | SPACE DIGITAL CHAR-DOT CHAR-E DIGITAL |
- | 8 | -1 | 8 | -1 | -1 | -1 | -1 | SPACE DIGITAL CHAR-DOT CHAR-E DIGITAL SPACE |
+| State | INVALID | SPACE | CHAR-SIGN | DIGITAL | CHAR-DOT | CHAR-E | Note  |
+| :---: | :-----: | ----- | :-------: | :-----: | :------: | :----: | :---- |
+| 0 | -1 | 0 | 3 | 1 | 2 |-1 | SPACE |
+| 1 | -1 | 8 |-1 | 1 | 4 | 5 | SPACE DIGITAL |
+| 2 | -1 |-1 |-1 | 4 |-1 |-1 | SPACE CHAR-DOT |
+| 3 | -1 |-1 |-1 | 1 | 2 |-1 | SPACE CHAR-SIGN |
+| 4 | -1 | 8 |-1 | 4 |-1 | 5 | SPACE DIGITAL CHAR-DOT |
+| 5 | -1 |-1 | 6 | 7 |-1 |-1 | SPACE DIGITAL CHAR-DOT CHAR-E |
+| 6 | -1 |-1 |-1 | 7 |-1 |-1 | SPACE DIGITAL CHAR-DOT CHAR-E CHAR-SIGN |
+| 7 | -1 | 8 |-1 | 7 |-1 |-1 | SPACE DIGITAL CHAR-DOT CHAR-E DIGITAL |
+| 8 | -1 | 8 |-1 |-1 |-1 |-1 | SPACE DIGITAL CHAR-DOT CHAR-E DIGITAL SPACE |
 
  
 ## State Change Graph
