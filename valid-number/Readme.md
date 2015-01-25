@@ -20,40 +20,8 @@
 
 ## State Change Table
 
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
-| Name | Description          |
-| ------------- | ----------- |
-| Help      | Display the help window.|
-| Close     | Closes a window     |
-
-表格中也可以使用普通文本的删除线，斜体等效果
-
-| Name | Description          |
-| ------------- | ----------- |
-| Help      | ~~Display the~~ help window.|
-| Close     | _Closes_ a window     |
-
-表格可以指定对齐方式
-
-| 左对齐 | 居中  | 右对齐 |
-| :------------ |:---------------:| -----:|
-| col 3 is      | some wordy text | $1600 |
-| col 2 is      | centered        |   $12 |
-| zebra stripes | are neat        |    $1 |
-
-
 | State | INVALID | SPACE | CHAR-SIGN | DIGITAL | CHAR-DOT | CHAR-E | Note  |
-| :---: | :-----: | ----- | :-------: | :-----: | :------: | :----: | :---- |
+| :---: | :-----: | :---: | :-------: | :-----: | :------: | :----: | :---- |
 | 0 | -1 | 0 | 3 | 1 | 2 |-1 | SPACE |
 | 1 | -1 | 8 |-1 | 1 | 4 | 5 | SPACE DIGITAL |
 | 2 | -1 |-1 |-1 | 4 |-1 |-1 | SPACE CHAR-DOT |
