@@ -10,6 +10,7 @@
 > - "abc" => false
 > - "1 a" => false
 > - "2e10" => true
+> 
 > Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.
 
 
@@ -19,17 +20,17 @@
 
 ## State Change Table
 
-State|INVALID|SPACE|CHAR_SIGN|DIGITAL|CHAR_DOT|CHAR_E|Note
--|-|-|-|-|-|-
-0|-1|0|3|1|2|-1|SPACE
-1|-1|8|-1|1|4|5|SPACE+DIGITAL
-2|-1|-1|-1|4|-1|-1|SPACE+CHAR_DOT
-3|-1|-1|-1|1|2|-1|SPACE+CHAR_SIGN
-4|-1|8|-1|4|-1|5|SPACE+DIGITAL+CHAR_DOT
-5|-1|-1|6|7|-1|-1|SPACE+DIGITAL+CHAR_DOT+CHAR_E
-6|-1|-1|-1|7|-1|-1|SPACE+DIGITAL+CHAR_DOT+CHAR_E+CHAR_SIGN
-7|-1|8|-1|7|-1|-1|SPACE+DIGITAL+CHAR_DOT+CHAR_E+DIGITAL
-8|-1|8|-1|-1|-1|-1|SPACE+DIGITAL+CHAR_DOT+CHAR_E+DIGITAL+SPACE
+ | State | INVALID | SPACE | CHAR_SIGN | DIGITAL | CHAR_DOT | CHAR_E | Note  |
+ | ----- | ------- | ----- | --------- | ------- | -------- | ------ | ----- |
+ | 0 | -1 | 0 | 3 | 1 | 2 | -1 | SPACE |
+ | 1 | -1 | 8 | -1 | 1 | 4 | 5 | SPACE+DIGITAL |
+ | 2 | -1 | -1 | -1 | 4 | -1 | -1 | SPACE+CHAR_DOT |
+ | 3 | -1 | -1 | -1 | 1 | 2 | -1 | SPACE+CHAR_SIGN |
+ | 4 | -1 | 8 | -1 | 4 | -1 | 5 | SPACE+DIGITAL+CHAR_DOT |
+ | 5 | -1 | -1 | 6 | 7 | -1 | -1 | SPACE+DIGITAL+CHAR_DOT+CHAR_E |
+ | 6 | -1 | -1 | -1 | 7 | -1 | -1 | SPACE+DIGITAL+CHAR_DOT+CHAR_E+CHAR_SIGN |
+ | 7 | -1 | 8 | -1 | 7 | -1 | -1 | SPACE+DIGITAL+CHAR_DOT+CHAR_E+DIGITAL |
+ | 8 | -1 | 8 | -1 | -1 | -1 | -1 | SPACE+DIGITAL+CHAR_DOT+CHAR_E+DIGITAL+SPACE |
 
 ## State Change Graph
 
@@ -38,6 +39,8 @@ State|INVALID|SPACE|CHAR_SIGN|DIGITAL|CHAR_DOT|CHAR_E|Note
 
 
 ### graphviz code
+
+```python
 
     	digraph valid_number_state_machine {
 		rankdir=LR;
@@ -90,8 +93,9 @@ State|INVALID|SPACE|CHAR_SIGN|DIGITAL|CHAR_DOT|CHAR_E|Note
 		LR_8 -> LR_E [ label = "dot/+/-/e/E/space/invalid" ];
 	}
 
+```
 
 
 #Copyright
-by maotinghust@gmail.com
-at 2015/01/24
+by maotinghust@gmail.com at 2015/01/24
+
