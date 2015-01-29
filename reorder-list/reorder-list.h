@@ -42,7 +42,7 @@ public:
 
         pNow = head;
         int sz = vec.size();
-        for(int i=0; i<sz/2; ++i){
+		for (int i = 0; i<sz / 2 && pNow; ++i){
 
             ListNode *p1 = pNow->next;
             ListNode *p2 = vec[sz-1-i];
@@ -53,7 +53,8 @@ public:
 
             pNow = p1;
         }
-        pNow->next = 0;
+		if (pNow)
+			pNow->next = 0;
     }
 };
 

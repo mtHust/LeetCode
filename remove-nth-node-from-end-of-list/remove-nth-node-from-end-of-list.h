@@ -28,6 +28,8 @@ struct ListNode {
 class Solution {
 public:
     ListNode *removeNthFromEnd(ListNode *head, int n) {
+		if (!head)
+			return head;
         ListNode* pFast = head;
         ListNode* pSlow = head;
         int i=0;
@@ -43,12 +45,13 @@ public:
             }
         }
 
-        while(pFast->next){
+		while (pFast && pFast->next){
             pFast = pFast->next;
             pSlow = pSlow->next;
         }
 
-        pSlow->next = pSlow->next->next;
+		if (pSlow)
+			pSlow->next = pSlow->next->next;
 
         return head;
     }

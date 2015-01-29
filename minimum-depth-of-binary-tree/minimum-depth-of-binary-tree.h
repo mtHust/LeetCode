@@ -16,6 +16,9 @@ Copyright:
     at 2015/01/24
 
 */
+
+#include <algorithm>
+
 /**
  * Definition for binary tree
  */
@@ -38,7 +41,7 @@ public:
         if(!root->right)
             return 1+minDepth(root->left);
 
-        return 1+min(minDepth(root->left), minDepth(root->right));
+        return 1+std::min(minDepth(root->left), minDepth(root->right));
     }
 
 };

@@ -27,7 +27,15 @@ SUBDIRS += \
     implement-strstr \
     intersection-of-two-linked-lists \
     permutations \
-    minimum-depth-of-binary-tree
+    minimum-depth-of-binary-tree \
+    add-two-numbers \
+    trapping-rain-water \
+    unique-paths-ii \
+    unique-binary-search-trees-ii \
+    triangle \
+    scramble-string \
+    dungeon-game \
+    find-minimum-in-rotated-sorted-array
 
 
 #SOURCES += main.cpp

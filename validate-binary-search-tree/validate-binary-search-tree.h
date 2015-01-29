@@ -16,6 +16,8 @@ Hide Tags Tree Depth-first Search
 
 */
 
+#include <climits>
+
 /**
  * Definition for binary tree
  */
@@ -29,7 +31,7 @@ struct TreeNode {
 class Solution {
 public:
     bool isValidBST(TreeNode *root) {
-        return check(root, LONG_LONG_MIN, LONG_LONG_MAX);
+        return check(root, LLONG_MIN, LLONG_MAX);
     }
 private:
     bool check(TreeNode *root, long long leftVal, long long rightVal){

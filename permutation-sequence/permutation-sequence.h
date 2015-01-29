@@ -29,8 +29,8 @@ public:
     string getPermutation(int n, int k) {
         string data;
         data.resize(n);
-        int nums[n];
-        int facts[n];
+        int* nums = new int[n];
+        int* facts = new int[n];
         nums[0] = 1;
         facts[0] = 1;
         for(int i=1; i<n; ++i){
@@ -50,6 +50,9 @@ public:
 
             k -= sel * facts[n-1-i];
         }
+
+        delete []nums;
+        delete []facts;
 
         return data;
     }
